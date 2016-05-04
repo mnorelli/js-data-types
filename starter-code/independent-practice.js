@@ -11,6 +11,12 @@
  */
 
 // Your code here
+var q1 = [];
+for (i=1;i<4;i++) {
+    q1.push("image"+i+".png");
+}
+console.log("Question 1:  ", q1);
+
 
 /**
  * Question 2
@@ -18,6 +24,8 @@
  */
 
 // Your code here
+var q2 = q1[0];
+console.log("Question 2:  ", q2);
 
 /**
  * Question 3
@@ -25,15 +33,17 @@
  */
 
 // Your code here
-
+var q3 = q2.length
+console.log("Question 3:  ", q3);
 /**
  * Question 4
  *  Using the array from Question 1, store the last element of the array in variable q4. Hint: How can we get the number of elements in the array?
  */
 
-
 // Your code here
-
+var i = q1.length - 1;
+var q4 = q1[i];
+console.log("Question 4:  ", q4);
 
 // ____________________________________________________________________________
 
@@ -51,7 +61,12 @@ The end result should be an array of numbers with values 2,3,4,5
  */
 
 // Your code here
-
+var nums = [1,2,3,4];
+var q1 = [];
+nums.forEach(function(d){
+    q1.push(d+1);
+    })
+console.log("Question 1:  ", q1);
 
 /**
  * Question 2
@@ -60,3 +75,7 @@ The end result should be an array of numbers with values 2,3,4,5
 
 
 // Your code here
+var sum = 0;
+q1.forEach(function(e){sum += e});
+q2 = sum / q1.length;
+console.log("Question 2:  ", q2);
